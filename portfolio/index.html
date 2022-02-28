@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedansh Girdharwal's portfolio</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./script.js"></script>
+    <script>
+        console.log("this is from html");
+    </script>
+    <style>
+        #here{
+            color: burlywood;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2 style="text-align: center;">Welcome to Vedansh's Fynd portfolio</h2>
+    <img src="./static/images/00100sPORTRAIT_00100_BURST20190727140814175_COVER-min.jpg" alt="Vedansh's picture" width="150" height="150">
+    <div>Today has <em>indeed</em> been a <span style="color: blueviolet;">loooonng</span> day</div>
+    <div id="here">Here's what I have learned today:</div>
+    <ul>
+        <li>semantic elements</li>
+        <li>different attributes</li>
+        <li>A web page is interpreted, not compiled</li>
+        <li>different tags like italic, bold, superscript, subscript, etc</li>
+        <li>About div and span and difference between them</li>
+        <li>Browser has its own internal memory</li>
+        <li>ordered and unordered lists</li>
+    </ul>
+    <table style="font-family:cursive">
+        This is coming from the table.
+        
+        <tr>
+            <th scope="col">Students</th>
+            <th scope="col">Class 1</th>
+            <th scope="col">Class 2</th>
+            <th scope="col">Class 3</th>
+        </tr>
+        <tr>
+            <th scope="row">Vedansh</th>
+            <td>Attended</td>
+            <td>Attended</td>
+            <td>Attended</td>
+        </tr>
+        <tr>
+            <th scope="row">Satvik</th>
+            <td>Attended</td>
+            <td>Attended</td>
+            <td>Attended</td>
+        </tr>
+        <tr>
+            <th scope="row">Shreshtha</th>
+            <td>Attended</td>
+            <td>Attended</td>
+            <td>Attended</td>
+        </tr>
+    </table>
+    <form method="HTTPVERB" action="WHERE THIS FORM GOING">
+        <div>
+        <label for="first name">First name:</label>
+        <input type="text" id="first" name="first name">
+        </div>
+        <div>
+        <label for="password">Password:</label>
+        <input type="password" id="pass" name="password">
+        </div>
+        <div>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        </div>
+        <div>
+        <label for="number">Phone number</label>
+        <input type="number" name="number">
+        </div>
+        <div>
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label id="textarealabel" for="about" >About yourself:</label>
+            <textarea name="about" id="" cols="30" rows="5">This is the text area where we put the paragraph </textarea>
+        </div>
+        
+        <input type="submit" class="submit">
+        <div>
+            <label for="students">Who's your pokemon?</label>
+            <select name="students">
+                <option value="stud1">Pikachu</option>
+                <option value="stud2">Bulbasaur</option>
+                <option value="stud3">Squirtle</option>
+                <option value="stud4">Charmander</option>
+            </select>
+        </div>
+        <div>
+            <p>Favourite Harry Potter character?</p>
+            <label for="her">Hermione Granger</label>
+            <input type="radio" id="her" name="radio_example" value="hermione">
+            <label for="dobby">Dobby</label>
+            <input type="radio" id="dobby" name="radio_example" value="dobby">
+            <label for="sirius">Sirius Black</label>
+            <input type="radio" id="sirius" name="radio_example" value="sirius">
+            <label for="draco">Draco Malfoy</label>
+            <input type="radio" id="draco" name="radio_example" value="draco">
+        </div>
+        <div>
+            <p>Select all the beverages you like:</p>
+            <label for="tea">Tea</label>
+            <input type="checkbox" class="check" name="tea" value="tea">
+            <label for="coffee">Coffee</label>
+            <input type="checkbox" name="coffee" class="check" value="coffee">
+            <label for="soft">Soft Drinks</label>
+            <input type="checkbox" name="soft" class="check" value="soft drinks">
+            <label for="mocktail0">Mocktails</label>
+            <input type="checkbox" name="mocktail" class="check" value="mocktails">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    <a id="a1" href="https://www.google.com/" target="_blank">Take me to google</a>
+    
+    <div class="fyndfstjs">
+        sdjfghdjs
+        <div id="nathan">nathan chacha</div>
+    </div>
+
+    <h6>target example</h6>
+    <p><a href="#firstarticle">Go to first article</a></p>
+    <p><a href="#secondarticle">Go to second article</a></p>
+
+    <p id="firstarticle"> this is the first article</p>
+    <p id="secondarticle"> this is the second article</p>
+    
+    <div class="blockexample">
+        block level-1
+    </div>
+    <div class="blockexample">
+        block level-2
+    </div>
+    <div class="blockexample">
+        block level-3
+    </div>
+    <div class="blockexample">
+        block level-4
+    </div>
+
+
+    <span class="inlineexample">
+        span-1
+    </span>
+    <span class="inlineexample">
+        span-2
+    </span>
+    <span class="inlineexample">
+        span-3
+    </span>
+    <span class="inlineexample">
+        span-4
+    </span>
+    <div id="parentposition">
+    <div class="positionexample" id="staticexample">static example</div>
+    <div class="positionexample" id="relativeexample">relative example</div>
+    <div class="positionexample" id="fixedexample">fixed example</div>
+    <div class="positionexample" id="absoluteexample">absolute example</div>
+    <div class="positionexample" id="stickyexample">sticky example</div>
+    </div>
+
+    <div id="floatexample"></div>
+    <div><img id="imagefloat" src="https://s.yimg.com/uu/api/res/1.2/0zZi8xs9sTZ4eaehl6Uw4w--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en-GB/homerun/omnisport.uk/1724aeb741eb125fb93d072bf4fbf3fd" alt="Ronaldinho" width="200px"></div>
+    <div><img id="imagefloat" src="https://s.yimg.com/uu/api/res/1.2/0zZi8xs9sTZ4eaehl6Uw4w--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en-GB/homerun/omnisport.uk/1724aeb741eb125fb93d072bf4fbf3fd" alt="Ronaldinho" width="200px"></div>
+    
+    <img id="imagefloat1" src="https://s.yimg.com/uu/api/res/1.2/0zZi8xs9sTZ4eaehl6Uw4w--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en-GB/homerun/omnisport.uk/1724aeb741eb125fb93d072bf4fbf3fd" alt="Ronaldinho" width="200px">
+    <img id="imagefloat1" src="https://s.yimg.com/uu/api/res/1.2/0zZi8xs9sTZ4eaehl6Uw4w--~B/aD0xMDgwO3c9MTkyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en-GB/homerun/omnisport.uk/1724aeb741eb125fb93d072bf4fbf3fd" alt="Ronaldinho" width="200px">
+
+    <div id="randomtext">
+        This is just some random text. It has no meaning. It is here just for the sake of div.
+        This is just some random text. It has no meaning. It is here just for the sake of div.
+        This is just some random text. It has no meaning. It is here just for the sake of div.
+        This is just some random text. It has no meaning. It is here just for the sake of div.
+        This is just some random text. It has no meaning. It is here just for the sake of div.
+        This is just some random text. It has no meaning. It is here just for the sake of div.
+        This is just some random text. It has no meaning. It is here just for the sake of div.
+        This is just some random text. It has no meaning. It is here just for the sake of div.
+    </div>
+
+    <div id="transitionexample">
+        transition
+    </div>
+    
+    <div id="Nthchildelement" class="Nthchildelementparent">
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+        <div class="Nthchild"></div>
+    </div>
+
+    
+
+    <pre>
+        to be continued..
+    </pre>
+
+</body>
+
+</html>

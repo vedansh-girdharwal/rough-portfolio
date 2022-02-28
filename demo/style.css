@@ -1,0 +1,137 @@
+#hero{
+    height: fit-content;
+}
+#banner_left{
+    height:400px;
+    float:left;
+}
+#banner_right{
+    float:right;
+    height: 600px;
+    width:1000px;
+}
+#banner_img{
+    position: absolute;
+    height: 390px;
+    width: 450px;
+    margin-left: 650px;
+    margin-top: 100px;
+}
+
+#table1{
+    margin-top: 130px;
+    margin-left:70px;
+    position: absolute;
+}
+td{
+    width:185px;
+    font-size: larger;
+}
+#second_row{
+    font-size: 20px;
+}
+p{
+    position: absolute;
+    margin-top: 210px;
+    margin-left:70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    width: 500px;
+    background:linear-gradient(coral,rgb(255, 80, 80));
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+button{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: -55px;
+    border-radius: 18px;
+    padding: 8px;
+    background-color: rgb(3, 226, 208);
+    color:#fff;
+    border-color:rgb(3, 226, 208) ;
+}
+#block{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.services{
+    height: 200px;
+    width:300px;
+    display: inline-block;
+    border: 2px gray solid;
+    padding: 30px;
+    margin: 20px;
+}
+
+@media only screen and (max-width:600px){
+    
+    #banner_left{
+        height:150px;
+        float:left;
+    }
+    #banner_right{
+        float:right;
+        height: 250px;
+        width:400px;
+    }
+    #banner_img{
+        position: absolute;
+        height: 150px;
+        width: 180px;
+        margin-left: 230px;
+        margin-top: 50px;
+    }
+    
+    #table1{
+        margin-top: 50px;
+        margin-left:30px;
+        position: absolute;
+    }
+    td{
+        width:55px;
+        font-size:xx-small;
+    }
+    #second_row{
+        font-size: 20px;
+    }
+    p{
+        position: absolute;
+        margin-top: 80px;
+        margin-left:30px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        width: 240px;
+        background:linear-gradient(coral,rgb(255, 80, 80));
+        -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+        
+    }
+    button{
+        position: absolute;
+        margin-top: 155px;
+        margin-left: -17px;
+        border-radius: 18px;
+        padding: 4px;
+        background-color: rgb(3, 226, 208);
+        color:#fff;
+        border-color:rgb(3, 226, 208) ;
+        font-size: 7px;
+    }
+    #block{
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size:xx-small;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+

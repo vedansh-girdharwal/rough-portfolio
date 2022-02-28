@@ -1,0 +1,95 @@
+/* .spacer{
+    height:15px;
+}
+#one{
+    background-color: cadetblue;
+    height: 30px;
+    width: 30px;
+}
+#two{
+    background-color: chocolate;
+    height: 30px;
+    width:50px;
+}
+#three{
+    background-color: darkcyan;
+    height: 60px;
+    width: 70px;
+} */
+/* @media only screen and (min-width: 1300px){....} */
+/* @media only screen and (min-width: 600px) and (max-width:1299px){
+    .spacer{
+        height: 20px;
+    }
+    #one{
+        background-color:dodgerblue;
+        height: 40px;
+        width: 40px;
+    }
+    #two{
+        background-color: gold;
+        height: 40px;
+        width: 65px;
+    }
+    #three{
+        background-color:cadetblue;
+        height: 75px;
+        width:85px;
+    }
+} */
+
+/* @media only screen and (min-width: 1300px){
+    .spacer{
+        height: 50px;
+    }
+    #one{
+        background-color: darkblue;
+        height: 30px;
+        width: 200px;
+    }
+    #two{
+        background-color: darkgoldenrod;
+        height: 80px;
+        width: 500px;
+    }
+    #three{
+        background-color: crimson;
+        height: 120px;
+        width:800px;
+    }
+} */
+
+#one{
+    background-color: dodgerblue;
+    height: 50px;
+    width: 50px;
+    /* transform: translateX(50%) translateY(50%); */
+}
+#two{
+    background-color: dodgerblue;
+    height: 50px;
+    width: 50px;
+    /* transform: translateX(50%) translateY(50%); */
+}
+#three{
+    background-color: dodgerblue;
+    height: 50px;
+    width: 50px;
+    /* transform: translateX(50%) translateY(50%); */
+}
+/* #grandparent{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    
+} */
+
+#parent{
+    background-color: rgb(235, 126, 23);
+    display: flex;
+    flex-direction: row;
+
+    height: 100vh;
+    justify-content:center;
+    align-items:center;
+}
