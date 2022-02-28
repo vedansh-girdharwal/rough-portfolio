@@ -243,7 +243,6 @@ function toData(a, b){
 console.log(toData("2022-02-23","2022-02-25"));
 
 
-// console.log(user.map(item=> item.leaves.map(it=> it.dates.filter(i=>new Date(i)>new Date("2022-02-24")))));
 
 // let leaves=[
 //     {
