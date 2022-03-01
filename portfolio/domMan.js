@@ -223,24 +223,34 @@ let user=[
 //write a function that gives all the users who have a taken leave between two given dates, including them with the details of leaves
 
 
-function toData(a, b){
-        return (user.map(item=>{
+var d = new Date();
+function toData(a=new Date(d.getFullYear(),d.getMonth(),1), b=new Date(d.getFullYear(),d.getMonth()+1,0)){
+    
+    let result = user.map(item=>{
             return {
                 id:item.id,
                 name:item.name,
                 leaves:item.leaves.map((it)=>{
-                    if(it.dates.filter(i=>(new Date(a)<new Date(i))&&(new Date(b)>new Date(i))))
-                    return {
-                        dates:it.dates.filter(i=>new Date(a)<=new Date(i)&&new Date(b)>=new Date(i)),
-                        id:it.id,
-                        reason:it.reason
-                    };
-                })
+                    let date=it.dates.filter(i=>(new Date(a)<new Date(i))&&(new Date(b)>new Date(i)));
+                    if(date.length>0){
+                        return {
+                            dates:it.dates.filter(i=>new Date(a)<new Date(i)&&new Date(b)>new Date(i)),
+                            id:it.id,
+                            reason:it.reason
+                        };
+                    }
+                    
+                    else{
+                        return null;
+                    }
+                }).filter(x=>!!x)
             };
-        }));
+        }
+    );
+    return result;
     
 }
-console.log(toData("2022-02-23","2022-02-25"));
+console.log(toData("2022-02-24"));
 
 
 // console.log(user.map(item=> item.leaves.map(it=> it.dates.filter(i=>new Date(i)>new Date("2022-02-24")))));
