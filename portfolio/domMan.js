@@ -222,6 +222,8 @@ let user=[
 ]
 //write a function that gives all the users who have a taken leave between two given dates, including them with the details of leaves
 
+
+
 var d = new Date();
 function toData(a=new Date(d.getFullYear(),d.getMonth(),1), b=new Date(d.getFullYear(),d.getMonth()+1,0)){
     
