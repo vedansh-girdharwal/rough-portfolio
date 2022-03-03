@@ -13,16 +13,13 @@ let users=[
 ]
 
 
+//create user
 router.post("/",(req,res,next)=>{
-    // console.log(req.body);
     users.push(req.body);
-    console.log("spreaded", ...users);
-    console.log("unspreaded",users);
     res.json({message:"This is coming from api/routes/user.js but through post"});
 })
 
 
-//create user
 //get all users
 router.get("/",(req,res,next)=>{
    //res.write("This is from api/routes/user.js");

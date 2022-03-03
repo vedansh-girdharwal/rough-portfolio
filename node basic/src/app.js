@@ -15,29 +15,13 @@ app.use(bodyParser.json());
 
 
 app.use("/users",userRouter);
-/*app.use((req,res,next)=>{
-    console.log("first use all middleware run");
-    next();
-},(req,res,next)=>{
-    console.log("second use all middleware run");
-    next();
-})
 
-app.post("/",(req,res,next)=>{
-    res.json({message:`This is coming from "/" request`});
-    next();
-})*/
 
 app.get("/",(req,res,next)=>{
     res.json("This working on / request");
     next();
 }); 
 
-
-// app.get("/Vedansh",(req,res,next)=>{
-//     res.json("This works Vedansh beta");
-    
-// });
 
 // app.listen(4000,()=>{
 //     console.log(`Server running on the port 4000`)
