@@ -1,32 +1,24 @@
 const express = require("express");
 const router = express.Router();
 
-let users=[
-    {
-        name:"Vedansh",
-        id:1
-    },
-    {
-        name:"Satvik",
-        id:2
-    }
-]
-
+const {user_signup,get_all_users,get_single_user,update_a_user,delete_a_user,user_login} = require("../controllers/user.js");
+const checkAuth = require("../middleware/auth-check.js")
 
 //create user
-router.post("/",(req,res,next)=>{
-    users.push(req.body);
-    res.json({message:"This is coming from api/routes/user.js but through post"});
-})
+router.post("/signup",user_signup);
 
+//login user
+router.post("/login",user_login);
 
 //get all users
-router.get("/",(req,res,next)=>{
-   //res.write("This is from api/routes/user.js");
-    res.json({users:users});
-});
+router.get("/",get_all_users);
 //get single user
+router.get("/:userId",checkAuth,get_single_user);
+
 //update single user
+router.patch("/:userId",checkAuth,update_a_user);
+
 //delete single user
+router.delete("/:userId",checkAuth,delete_a_user);
 
 module.exports = router;

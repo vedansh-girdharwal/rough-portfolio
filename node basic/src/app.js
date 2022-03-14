@@ -1,10 +1,28 @@
 const express = require("express");
 const app = express();
+
+//configure mongoose
+const mongoose = require("mongoose");
+const dburl = "mongodb+srv://Vedansh777:bhatakti@fynd.nvmei.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
+mongoose.connect(dburl,{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+}).then(
+    ()=>console.log("MongoDB is connected 🤓")
+).catch(
+    (err)=>console.log(err)
+);
 const userRouter = require("../api/routes/user.js");
+const productRouter = require("../api/routes/product.js");
+const orderRouter = require("../api/routes/order.js");
+
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
-
+//configure cors
+app.use(cors());
 
 //configure morgan
 app.use(morgan("dev"));
@@ -15,7 +33,8 @@ app.use(bodyParser.json());
 
 
 app.use("/users",userRouter);
-
+app.use("/product",productRouter);
+app.use("/order",orderRouter);
 
 app.get("/",(req,res,next)=>{
     res.json("This working on / request");
