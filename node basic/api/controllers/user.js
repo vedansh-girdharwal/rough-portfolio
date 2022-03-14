@@ -156,11 +156,12 @@ const user_login = (req,res,next)=>{
             })
         }
         bcryptjs.compare(req.body.password, user[0].password,(err,result)=>{
-            if(err){
-                return res.status(401).json({
-                    message:"auth failed"
-                })
-            }
+            // if(err){
+            //     return res.status(500).json({
+            //         message:"auth failed",
+            //         error:err
+            //     })
+            // }
             if(result){
                 //generate jwt here
                 const token = jwt.sign({
@@ -177,11 +178,17 @@ const user_login = (req,res,next)=>{
                    token
                }) 
             }
+            else{
+                return res.status(401).json({
+                    message:"auth failed"
+                })
+            }
         })
     })
     .catch(err=>{
         console.log(err);
         res.status(500).json({
+            message:"auth failed",
             error:err
         })
     })
