@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 30, 39);
+}
+#login{
+    border: 1px solid #000000;
+    box-shadow: 10px 10px;
+    width: 20vw;
+    padding: 10px;
+    background-color:rgba(6, 115, 119, 0.24);
+}
+input{
+    border-radius: 20px;
+    padding: 3px;
+    height:20px;
+    width:70%;
+    margin:5px;
+    border : 1px solid rgb(6, 115, 119)
+}
+label{
+    color:darkblue;
+}
+button{
+    padding: 10px;
+    border-radius: 20px;
+    width:100px;
+    border:1px solid rgb(6, 115, 119);
+    background-color: rgb(46, 112, 235);
+    color: aliceblue;
+}
+button:hover{
+    background-color: rgb(4, 86, 238);
+}
+#loginbtn{
+    margin-top: 10px;
+}
+input:hover{
+    background-color: rgba(27, 121, 124, 0.185);
+}
